@@ -1,0 +1,34 @@
+=LDR  01850nam a22004097a 4500
+=001  ssj0000394939
+=003  WaSeSS
+=005  20101209205155.0
+=006  m\\\\\\\\d\\\\\\\\
+=007  cr\\n\\\\\\\\\
+=008  070126s2007\\\\caua\\\\sb\\\\101\0\eng\d
+=010  \\$a  2007921748
+=020  \\$a0769528295
+=020  \\$a9780769528298
+=035  \\$z156994878
+=040  \\$aLHL$cLHL$dDLC$dWaSeSS
+=042  \\$alccopycat
+=050  00$aQA76.758$b.F884 2007
+=111  2\$aFuture of Software Engineering$n(1st :$d2007 :$cMinneapolis, Minn.)
+=245  10$aFuture of software engineering 2007$h[electronic resource] :$bFoSE 2007 : 23-25 May 2007, Minneapolis, Minnesota /$cedited by Lionel Briand, Alexander L. Wolf.
+=246  34$aICSE 2007
+=246  30$aFOSE '07
+=260  \\$aLos Alamitos, CA :$bIEEE Computer Society,$cc2007.
+=300  \\$a1 online resource (ix, 379 p.) :$bill.
+=500  \\$aSponsored by IEEE Computer Society Technical Council on Software Engineering, The ACM Special Interest Group on Software Engineering (SIGSOFT)
+=504  \\$aIncludes bibliographical references and index.
+=590  \\$aProvider: IEEE
+=590  \\$aVendor supplied catalog record.
+=650  \0$aSoftware engineering$vCongresses.
+=700  1\$aBriand, Lionel C.
+=700  1\$aWolf, Alexander L.
+=710  2\$aIEEE Computer Society.$bTechnical Council on Software Engineering.
+=710  2\$aACM Sigsoft.
+=711  2\$aInternational Conference on Software Engineering.$n(27th :$d2007 :$cMinneapolis, Minn.)
+=711  2\$aInternational Conference on Software Engineering.
+=856  40$yFull text available via the UNC-Chapel Hill Libraries$uhttp://VB3LK7EB4T.search.serialssolutions.com/?V=1.0&L=VB3LK7EB4T&S=JCs&C=TC0000394939&T=marc$xIEEE/IET Electronic Library (IEL) Proceedings By Volume
+=949  \1$aINTERNET: SerSol E-book$z099 9$g1$lebnb$h0$t11$rn$u-
+
