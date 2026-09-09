@@ -1,5 +1,4 @@
-require 'marc'
-require './lib/marc_sersol/record'
+require 'marc_sersol'
 
 describe MARC::Record do
 
@@ -11,12 +10,12 @@ describe MARC::Record do
     it "Changes ssib to sseb" do
       rec = @recs[0]
       rec.localize001
-      rec['001'].value.should =~ /^sseb/
+      expect(rec['001'].value).to match(/^sseb/)
     end
     it "Changes ssj to sse" do
       rec = @recs[1]
       rec.localize001
-      rec['001'].value.should =~ /^sse\d/
+      expect(rec['001'].value).to match(/^sse\d/)
     end
   end
 
@@ -27,16 +26,15 @@ describe MARC::Record do
     end
     it "one 856, one package" do
       rec = @recs[0]
-      rec.packages.should == ['Health Source: Doctor\'s Edition']
+      expect(rec.packages).to eq(['Health Source: Doctor\'s Edition'])
     end
     it "one 856, more than one package (sorts alphabetically)" do
       rec = @recs[1]
-      rec.packages.should == ['MATHnetBASE', 'Springer']
+      expect(rec.packages).to eq(['MATHnetBASE', 'Springer'])
     end
     it "more than one 856, more than one package (deduplicates)" do
       rec = @recs[2]
-      rec.packages.should == ['Black Drama (Second Edition)', 'Black Thought and Culture', 'Computer Database']
+      expect(rec.packages).to eq(['Black Drama (Second Edition)', 'Black Thought and Culture', 'Computer Database'])
     end
   end
 end
-

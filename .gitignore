@@ -2,6 +2,8 @@
 ## Eclipse
 #################
 
+/Gemfile.lock
+
 *.pydevproject
 .project
 .metadata

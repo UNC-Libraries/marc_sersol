@@ -8,5 +8,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://www.infomuse.org/}
   s.description = %q{marc_sersol adds SerialsSolutions-specific functions to the marc ruby gem classes.}
   s.add_runtime_dependency 'marc', '~> 1.1'
+  s.add_development_dependency 'rake', '~> 13.2'
+  s.add_development_dependency 'rspec', '~> 3.13'
   s.files = [ "lib/marc_sersol.rb", "lib/marc_sersol/record.rb"]
 end
