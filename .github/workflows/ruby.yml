@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: [3.3, 3.4]
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler: 2.5.23
+    - name: Install dependencies
+      run: bundle install
+    - name: Load library
+      run: bundle exec ruby -Ilib -e "require 'marc_sersol'"
+    - name: Run specs
+      run: bundle exec rspec
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3'
+        bundler: 2.5.23
+    - name: Resolve dependencies
+      run: bundle lock
+    - name: Install bundler-audit
+      run: gem install bundler-audit --no-document
+    - name: Audit dependencies
+      run: bundle-audit check --update
